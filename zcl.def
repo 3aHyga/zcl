@@ -1,0 +1,27 @@
+LIBRARY zcl.dll INITINSTANCE
+CODE PRELOAD EXECUTEREAD FIXED NONDISCARDABLE
+DATA SINGLE READWRITE PRELOAD SHARED
+HEAPSIZE 0x1000, 0
+DESCRIPTION 'Zeroteam Objects Libraty'
+;SUBSYSTEM NATIVE, 4.0
+IMPORTS
+MSVCRT.memcpy
+MSVCRT.memmove
+MSVCRT.malloc
+MSVCRT.free
+
+
+EXPORTS
+@ZComplexNumber@GetModule$qqrv
+@ZExp$qqrrx14ZComplexNumber
+_NaN
+_Inf
+_NInf
+_MinSingle
+_MaxSingle
+_MinDouble
+_MaxDouble
+_MinExtended
+_MaxExtended
+_MinComp
+_MaxComp
